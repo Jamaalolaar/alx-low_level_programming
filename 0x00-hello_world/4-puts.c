@@ -1,4 +1,5 @@
 #!/bin/bash
+gcc
 include <stdio.h>
 int main (void)
 {
