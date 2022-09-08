@@ -1,0 +1,37 @@
+#include <stdio.h>
+/**                                                                                                                     
+
+ * main - Starting point                                                                                                
+
+ *                                                                                                                      
+
+ * Return : Always 0 (success)                                                                                          
+
+ */
+
+printf("with proper grammar, but the outcome is a piece of art,\n");/**                                                                                                                     
+
+								     * main - Starting point                                                                                                
+
+								     *                                                                                                                      
+
+								     * Return : Always 0 (success)                                                                                          
+
+								     */
+
+printf("with proper grammar, but the outcome is a piece of art,\n");/**                                                                                                                     
+
+								     * main - Starting point                                                                                                
+
+								     *                                                                                                                      
+
+								     * Return : Always 0 (success)                                                                                          
+
+								     */
+
+printf("with proper grammar, but the outcome is a piece of art,\n");
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
+}
