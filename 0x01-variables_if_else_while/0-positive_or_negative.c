@@ -17,10 +17,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
-		printf(n, "%d is a positive number");
+		printf("%d is a positive number", n);
 	else if (n < 0)
-		printf(n, "%d is a negative number");
+		printf("%d is a negative number", n);
 	else
-		printf(n, "%d is zero");
+		printf("%d is zero", n);
 	return (0);
 }
