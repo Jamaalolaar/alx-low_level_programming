@@ -5,7 +5,6 @@
  *
  * Return: Always 0.
  */
-
 int main(void)
 {
 	char alphabet;
@@ -13,6 +12,6 @@ int main(void)
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 		putchar(letter);
 
-		putchat('\n');
+		putchar('\n');
 	return (0);
 }
