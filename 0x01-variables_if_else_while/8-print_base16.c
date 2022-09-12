@@ -11,19 +11,13 @@ int main(void)
 	int n;
 	char lt;
 
-	for (n = 0; n < 16; n++)
+	for (n = 0; n < 10; n++)
 	{
-		if (n < 10)
-		{
-			putchar(n);
-		}
-		else if (n >= 10)
-		{
-			for (lt = 'a'; lt <= 'f'; lt++)
-			{
-				putchar(lt);
-			}
-		}
+		putchar(n);
+	}
+	for (lt = 'a'; lt <= 'f'; lt++)
+	{
+		putchar(lt);
 	}
 	putchar('\n');
 	return (0);
