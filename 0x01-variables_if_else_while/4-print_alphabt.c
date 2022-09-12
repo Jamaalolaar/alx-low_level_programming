@@ -1,0 +1,19 @@
+#include <stdio.h>
+/**
+* main - to print the lowercase letters without the letters q and e.
+*
+* Return: Always 0.
+*/
+
+int main(void)
+{
+	char lt;
+
+	for (lt = 'a'; lt <= 'z'; lt++)
+	{
+		if (lt != 'e' && lt != 'q')
+			putchar(alphabet);
+	}
+	putchar('\n');
+	return (0);
+}
