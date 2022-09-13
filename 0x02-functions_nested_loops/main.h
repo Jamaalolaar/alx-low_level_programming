@@ -1,3 +1,4 @@
+#ifndef JAMAAL_INCLUDED
 #define JAMAAL_INCLUDED
 
 int _putchar(char);
