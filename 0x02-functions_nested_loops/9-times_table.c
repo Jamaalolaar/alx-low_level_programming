@@ -9,10 +9,21 @@
 void times_table(void)
 {
 	int x;
-	for (int n = 0; n <= 9; n++)
+	int n;
+	int product;
+	for (n = 0; n <= 9; n++)
 	{
-		x = n * 9;
-		_putchar(x + '0');
+		_putchar('0');
+		for (x = 1; x <= 9; x++)
+		{
+			_putchar(',');
+			_putchar(' ');
+			product = n * x;
+			if (product <= 9)
+				_putchar(' ');
+			else
+				_putchar((product / 10) + '0');
 	}
+		_putchar('\n');
 	return (0);
 }
