@@ -4,6 +4,7 @@
  * _islower - function checks if a lowercase letter is present
  *
  * Return: postive (1), negative (0)
+ * @c: is the int that will be used for the argument of the function.
  */
 
 int _islower(int c)
