@@ -17,7 +17,6 @@ void jack_bauer(void)
 	{
 		while (min <= 59)
 		{
-			av
 				hr_rem = hr % 10;
 			_putchar(hr / 10 + '0');
 			_putchar(hr_rem + '0');
@@ -28,6 +27,6 @@ void jack_bauer(void)
 			_putchar('\n');
 		}
 		hr++;
-		min=0;
+		min = 0;
 	}
 }
