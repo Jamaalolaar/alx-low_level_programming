@@ -13,11 +13,12 @@ void jack_bauer(void)
 	int hr = 0;
 	int hr_rem, min_rem;
 
-	while (hr <=23)
+	while (hr <= 23)
 	{
 		while (min <= 59)
 		{
-				hr_rem = hr % 10;
+			min_rem = min % 10;
+			hr_rem = hr % 10;
 			_putchar(hr / 10 + '0');
 			_putchar(hr_rem + '0');
 			_putchar(':');
