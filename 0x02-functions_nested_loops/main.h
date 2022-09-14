@@ -1,6 +1,5 @@
-#ifndef JAMAAL_H
-
-#define JAMAAL_H
+#ifndef MAIN_H
+#define MAIN_H
 
 char _putchar(char c);
 
