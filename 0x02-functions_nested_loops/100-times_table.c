@@ -10,7 +10,7 @@ void print_times_table(int n)
 {
 	int x, y, prod;
 
-	for (int x = 0; x <= n; x++)
+	for (x = 0; x <= n; x++)
 	{
 		_putchar('0');
 		
