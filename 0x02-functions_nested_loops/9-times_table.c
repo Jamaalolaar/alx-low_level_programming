@@ -24,8 +24,8 @@ void times_table(void)
 				_putchar(' ');
 			else
 				_putchar((product / 10) + '0');
-			
-			_putchar((production % 10) + '0');
+
+			_putchar((product % 10) + '0');
 		}
 		_putchar('\n');
 	}
