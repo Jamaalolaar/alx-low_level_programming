@@ -12,10 +12,7 @@ int print_times_table(int n)
 
 	for (x = 0; x <= n; x++)
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-		for (y = 1; y <= n; y++)
+		for (y = 0; y <= n; y++)
 		{
 			prod = x * y;
 			printf("%d, ", prod);
