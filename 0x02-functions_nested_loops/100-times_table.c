@@ -5,7 +5,7 @@
  * return: 0
  */
 
-void print_times_table(int n)
+int print_times_table(int n)
 {
 	int x, y, prod;
 
@@ -22,4 +22,5 @@ void print_times_table(int n)
 		}
 		_putchar('\n');
 	}
+	return (0);
 }
