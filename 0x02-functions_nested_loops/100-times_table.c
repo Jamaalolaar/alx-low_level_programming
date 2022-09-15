@@ -3,7 +3,7 @@
 /**
  * print_times_table - prints n times-table starting with 0
  * @n: argument of function
- * return: 0
+ * Return: 0
  */
 
 int print_times_table(int n)
@@ -16,7 +16,7 @@ int print_times_table(int n)
 		{
 			prod = x * y;
 			if (y < n)
-				printf("%d,  ", prod);
+				printf("%d,   ", prod);
 			else
 				printf("%d", prod);
 		}
