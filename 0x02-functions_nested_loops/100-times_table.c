@@ -15,7 +15,10 @@ int print_times_table(int n)
 		for (y = 0; y <= n; y++)
 		{
 			prod = x * y;
-			printf("%d,  ", prod);
+			if (y < n)
+				printf("%d,  ", prod);
+			else
+				printf("%d", prod);
 		}
 		printf("\n");
 	}
