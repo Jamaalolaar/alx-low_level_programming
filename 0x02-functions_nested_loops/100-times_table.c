@@ -13,19 +13,22 @@ void print_times_table(int n)
 	for (int x = 0; x <= n; x++)
 	{
 		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
+		
 		for (int y = 1; y <= n; y++)
 		{
+			_putchar(',');
+			_putchar(' ');
+			
 			prod = x * y;
-			if (prod > n)
+			if (prod > 9)
 			{
 				_putchar((prod / 10) + '0');
 			}
 			else
-				_putchar(prod + '0');
+				_putchar(' ');
+			
 			_putchar((prod % 10) + '0');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
