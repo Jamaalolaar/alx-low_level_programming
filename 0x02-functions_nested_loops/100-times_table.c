@@ -19,6 +19,7 @@ int print_times_table(int n)
 				_putchar(' ');
 			}
 			prod = x * y;
+			printf("%d", prod++);
 			printf("%d,  ", prod);
 		}
 		_putchar('\n');
