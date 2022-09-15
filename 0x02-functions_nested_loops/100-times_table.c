@@ -18,16 +18,8 @@ void print_times_table(int n)
 		{
 			_putchar(',');
 			_putchar(' ');
-			
 			prod = x * y;
-			if (prod > 9)
-			{
-				_putchar((prod / 10) + '0');
-			}
-			else
-				_putchar(' ');
-			
-			_putchar((prod % 10) + '0');
+			printf("%d", prod);
 		}
 		_putchar('\n');
 	}
