@@ -14,10 +14,14 @@ int print_times_table(int n)
 	{
 		for (y = 0; y <= n; y++)
 		{
+			if (prod <= n)
+			{
+				_putchar(' ');
+			}
 			prod = x * y;
 			printf("%d,  ", prod);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 	return (0);
 }
