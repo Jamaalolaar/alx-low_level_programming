@@ -16,8 +16,8 @@ int print_times_table(int n)
 		{
 			prod = x * y;
 			printf("%d, ", prod);
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 	return (0);
 }
