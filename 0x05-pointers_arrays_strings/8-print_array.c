@@ -3,7 +3,8 @@
 #include <string.h>
 
 /**
- * print_array -  prints n elements of an array of integers, followed by a new line.
+ * print_array -  prints n elements of an array of integers,
+ * followed by a new line.
  * @a: argument of function.
  * @n: argument of function.
  * Return: void
@@ -15,7 +16,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i != n-1)
+		if (i != n - 1)
 		{
 			printf("%d, ", a[i]);
 		}
@@ -24,4 +25,3 @@ void print_array(int *a, int n)
 	}
 	putchar(10);
 }
-	
