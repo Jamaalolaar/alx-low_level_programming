@@ -25,7 +25,7 @@ void puts_half(char *str)
 		half++;
 	}
 
-	while (half < index)
+	while (half < a)
 	{
 		_putchar(str[half]);
 		half++;
@@ -33,5 +33,3 @@ void puts_half(char *str)
 	_putchar('\n');
 	
 }
-
-
