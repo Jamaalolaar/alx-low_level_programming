@@ -7,13 +7,19 @@
  * starting with the first character,
  * followed by a new line.
  * @str: argument of function.
+ * Return: void
  */
 
 void puts2(char *str)
 {
-	for (int a = 0; str[a] != '\0'; a++)
+	int i = 0;
+	while (*(str + i) != '\0')
 	{
-		_putchar(str[a]);
-		_putchar('\n');
+		if (i % 2 == 0)
+		{
+			_putchar(*(str + i));
+		}
+		i++;
 	}
+	putchar(10);
 }
