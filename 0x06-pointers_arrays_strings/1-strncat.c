@@ -8,10 +8,11 @@
  * @dest: first input
  * @src: second input
  * @n: limiting number of bytes
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int len, i;
+	int len = 0, i = 0;
 
 	while (dest[i++])
 	{
