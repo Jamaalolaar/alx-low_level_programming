@@ -14,20 +14,21 @@ char *cap_string(char *str)
 
 	while (str[a++])
 	{
-		if (str[a - 1] == ' ' || str[a] == ','
+		if (str[a] == ' ' || str[a] == ','
 		    || str[a] == ';' || str[a] == '.'
 		    || str[a] == '!' || str[a] == '?'
 		    || str[a] == '"' || str[a] == '('
 		    || str[a] == ')' || str[a] == '{'
 		    || str[a] == '}')
 		{
-			if (str[a] >= 'a' && str[a] <= 'z')
+			if (str[a + 1] >= 'a' && str[a + 1] <= 'z')
 			{
-				str[a] -= 32;
+				str[a + 1] -= 32;
 			}
 		}
 		else
 			continue;
+		a++;
 	}
 	return (str);
 }
