@@ -14,6 +14,8 @@ char *cap_string(char *str)
 
 	while (str[a++])
 	{
+		while (!(str[a] >= 'a' && str[a] <= 'z'))
+		{
 		if (str[a] == ' ' || str[a] == ','
 		    || str[a] == ';' || str[a] == '.'
 		    || str[a] == '!' || str[a] == '?'
@@ -28,7 +30,7 @@ char *cap_string(char *str)
 		}
 		else
 			continue;
-		a++;
+		}
 	}
 	return (str);
 }
