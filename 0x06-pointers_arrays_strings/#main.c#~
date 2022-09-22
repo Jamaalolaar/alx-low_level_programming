@@ -1,0 +1,12 @@
+#include "main.h"
+/**
+ * main - callls other functions
+ *
+ * Return: always 0
+ */
+
+int main(void)
+{
+	char *str = "I am a string";
+
+	strinf
