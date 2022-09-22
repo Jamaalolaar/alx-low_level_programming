@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 /**
@@ -10,5 +9,18 @@
  * @src: second input
  * @n: limiting number of bytes
  */
+char *_strncat(char *dest, char *src, int n)
+{
+	int len, i;
 
+	while (dest[i++])
+	{
+		len++;
+	}
+	for (i = 0; src[i] && i < n; i++)
+	{
+		dest[len++] = src[i];
+	}
+	return (dest);
+}
 
