@@ -22,6 +22,7 @@ char *cap_string(char *str)
 		    || str[a] == '!' || str[a] == '?'
 		    || str[a] == '"' || str[a] == '('
 		    || str[a] == ')' || str[a] == '{'
+		    || str[a] == '\t' || str[a] = '\n'
 		    || str[a] == '}')
 		{
 				str[a + 1] -= 32;
