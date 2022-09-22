@@ -5,7 +5,7 @@
 /**
  * _strncpy - copies a string
  * @dest: first entry; string to be copied.
- * @src; second entry
+ * @src: second entry
  * @n: maximum number of bytes to be copied.
  * Return: dest
  */
