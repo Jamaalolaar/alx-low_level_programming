@@ -13,9 +13,9 @@ char *cap_string(char *str)
 	int b = 0, i;
 	char a[] = " \t\n,;.!?\"{}()";
 
-	while(*(str + b))
+	while (*(str + b))
 	{
-		if(str[b] >= 'a' && str[b] <= 'z')
+		if (str[b] >= 'a' && str[b] <= 'z')
 		{
 			if (b == 0)
 			{
