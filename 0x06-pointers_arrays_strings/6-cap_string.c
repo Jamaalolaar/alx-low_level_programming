@@ -11,9 +11,9 @@
 char *cap_string(char *str)
 {
 	int b = 0, i;
-	char a[] = " \t,\n;.!?\"{}()";
+	char a[] = " \t\n,;.!?\"{}()";
 
-	while(str(a))
+	while(str(b))
 	{
 		if(str[b] >= 'a' && str[b] <= 'z')
 		{
@@ -27,7 +27,7 @@ char *cap_string(char *str)
 				{
 					if (a[i] == str[b - 1])
 					{
-						str[a] -= 32;
+						str[b] -= 32;
 					}
 				}
 			}
