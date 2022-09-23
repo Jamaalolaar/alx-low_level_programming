@@ -4,7 +4,7 @@
 
 /**
  * leet - encodes a string to 1337
- * @s: string to encode
+ * @str: string to encode
  * Return: address of str
  */
 
@@ -14,7 +14,7 @@ char *leet(char *str)
 	char x[] = "aeotlAEOTL";
 	char y[] = "4307143071";
 
-	for (a = 0; s[a]; a++)
+	for (a = 0; *(str + a); a++)
 	{
 		for (b = 0; b <= 9; b++)
 		{
