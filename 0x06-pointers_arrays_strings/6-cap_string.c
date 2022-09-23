@@ -10,23 +10,28 @@
 
 char *cap_string(char *str)
 {
-	int a = 0;
+	int b = 0, i;
+	char a[] = " \t,\n;.!?\"{}()";
 
-	while (str[a++])
+	while(str(a))
 	{
-		if (str[a] == ' ' || str[a] == ','
-		    || str[a] == ';' || str[a] == '.'
-		    || str[a] == '!' || str[a] == '?'
-		    || str[a] == '"' || str[a] == '('
-		    || str[a] == ')' || str[a] == '{'
-		    || str[a] == '\t' || str[a] = '\n'
-		    || str[a] == '}')
+		if(str[b] >= 'a' && str[b] <= 'z')
 		{
-			if (str[a + 1] >= 'a' && str[a + 1] <= 'z')
-				str[a + 1] -= 32;
+			if (i == 0)
+			{
+				str[b] -= 32;
+			}
+			else
+			{
+				for (i = 0; i <= 12; i++)
+				{
+					if (a[i] == str[b - 1])
+					{
+						str[a] -= 32;
+					}
+				}
+			}
 		}
-		else
-			continue;
+		b++;
 	}
-	return (str);
 }
