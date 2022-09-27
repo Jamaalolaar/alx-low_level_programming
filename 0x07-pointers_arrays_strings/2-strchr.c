@@ -26,7 +26,7 @@ char *_strchr(char *s, char c)
 	}
 	if (c != *(s + a))
 	{
-		return (NULL);
+		return (0);
 	}
 	else
 	{
