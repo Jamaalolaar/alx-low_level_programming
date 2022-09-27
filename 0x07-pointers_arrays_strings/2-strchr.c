@@ -9,17 +9,15 @@
  */
 char *_strchr(char *s, char c)
 {
-	int a = 0;
-	
-	while (s[a] != '\0')
+	while (*s != '\0')
 	{
-		if (c == *(s + a))
+		if (c == *s)
 		{
 			return (s);
 		}
-		++a;
+		++s;
 	}
-	if (*(s + a) == c)
+	if (*s == c)
 	{
 		return (s);
 	}
