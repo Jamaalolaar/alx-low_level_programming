@@ -5,7 +5,7 @@
  * _strspn - gets the length of a prefix string
  * @s: first entry
  * @accept: second entry
- * return: string length
+ * Return: string length
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -13,20 +13,20 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int a = 0;
 	unsigned int n = 0;
 
-	if (s[a] != '\0' && s[a] != ',')
+	while (*(s + n))
 	{
-		while (accept)
+		while (*(accept + a))
 		{
-			while (s)
+			if (*(s + n) == *(accept + a))
 			{
-				if (*accept == *s)
-				{
-					n++;
-				}
-				++s;
+				break;
 			}
-			++accept;
+			a++;
 		}
-		return (n);
+		if (*(accept + a) == '\0')
+			break;
+		n++;
 	}
+	return (n);
+
 }
