@@ -15,17 +15,17 @@ unsigned int _strspn(char *s, char *accept)
 
 	if (s[a] != '\0' && s[a] != ',')
 	{
-		while (f)
+		while (accept)
 		{
 			while (s)
 			{
-				if (*f == *s)
+				if (*accept == *s)
 				{
 					n++;
 				}
 				++s;
 			}
-			++f;
+			++accept;
 		}
 		return (n);
 	}
