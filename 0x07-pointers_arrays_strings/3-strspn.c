@@ -13,20 +13,17 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int a = 0;
 	unsigned int n = 0;
 
-	while (*(s + n))
+	for (; *(s + n); n++)
 	{
-		while (*(accept + a))
+		for (; *(accept + a); a++)
 		{
 			if (*(s + n) == *(accept + a))
 			{
 				break;
 			}
-			a++;
 		}
 		if (*(accept + a) == '\0')
 			break;
-		n++;
 	}
 	return (n);
-
 }
