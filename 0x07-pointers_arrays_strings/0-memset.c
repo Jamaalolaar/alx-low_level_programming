@@ -7,7 +7,7 @@
  * @s: pointer that points to the character array
  * @b: byte to be filled in memory
  * @n: number of memory locations that te byte will be filled into.
- * return: s.
+ * Return: s.
  */
 
 char *_memset(char *s, char b, unsigned int n)
