@@ -12,6 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int a = 0;
 	unsigned int n = 0;
+	unsigned int b = 0;
 
 	for (; *(s + n); n++)
 	{
@@ -19,11 +20,12 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*(s + n) == *(accept + a))
 			{
+				b++;
 				break;
 			}
 		}
 		if (*(accept + a) == '\0')
 			break;
 	}
-	return (n);
+	return (b);
 }
