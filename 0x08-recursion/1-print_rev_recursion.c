@@ -21,7 +21,7 @@ int stringlength(char *s)
 }
 void _print_rev_recursion(char *s)
 {
-	int n = stringlength(s);
+	int n = stringlength(*s);
 
 	if (n == 0)
 	{
@@ -31,5 +31,5 @@ void _print_rev_recursion(char *s)
 	}
 
 	_putchar(*(s + n));
-	_print_rev_recursion(n - 1);
+	_print_rev_recursion(*(s + (n - 1)));
 }
