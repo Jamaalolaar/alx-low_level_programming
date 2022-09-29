@@ -22,7 +22,7 @@ int test(char *s, int i, int n)
 
 int is_palindrome(char *s)
 {
-	int n = _strlen(s);
+	int n = _strlen(s, 0);
 	int i = 0;
 	return (test(s, i, n));
 }
