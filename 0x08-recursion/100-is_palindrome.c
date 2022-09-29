@@ -9,7 +9,7 @@ int test(char *a, char *b)
 	}
 	else
 		return (0);
-	return test((a + 1), (b + 1));
+	return (test((a + 1), (b + 1)));
 }
 
 int is_palindrome(char *s)
