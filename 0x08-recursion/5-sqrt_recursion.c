@@ -10,17 +10,19 @@
  */
 
 int test_function(int num, int x)
+
 {
-	if (num % x == 0)
+	if ((x * x) == num)
 	{
-		if ((x * x) == num)
-		{
-			return (x);
-		}
-		else if ((x * x) > num)
-			return (-1);
+		return (x);
 	}
-       	return (test_function(num, x + 1));
+	else
+	{
+		if ((x * x) > num)
+			return (-1);
+		else
+			return (test_function(num, x + 1));
+	}
 }
 
 int _sqrt_recursion(int n)
