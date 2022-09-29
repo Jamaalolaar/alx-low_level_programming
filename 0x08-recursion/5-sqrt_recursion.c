@@ -2,11 +2,10 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - function that finds square root
- * @n: the number that it's square root is needed
- * test_function - a recursion that tests integers on n
+ * test_function - tests integers on n
  * @num: first entry for test function
  * @x: integers that test num in test function.
+ * Return: square root of number or -1 for error.
  */
 
 int test_function(int num, int x)
@@ -24,6 +23,11 @@ int test_function(int num, int x)
 			return (test_function(num, x + 1));
 	}
 }
+/**
+ * _sqrt_recursion - finds the square root of a number
+ * @n: number
+ * Return: square root.
+ */
 
 int _sqrt_recursion(int n)
 {
