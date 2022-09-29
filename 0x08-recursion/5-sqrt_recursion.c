@@ -36,6 +36,6 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 	else
-		return (test_function(n, 2));
+		return (test_function(n, 0));
 }
 
