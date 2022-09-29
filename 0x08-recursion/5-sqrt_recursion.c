@@ -22,6 +22,7 @@ int test_function(int num, int x)
 	}
 	else
 		return (test_function(num, x + 1));
+	return (0);
 }
 
 int _sqrt_recursion(int n)
