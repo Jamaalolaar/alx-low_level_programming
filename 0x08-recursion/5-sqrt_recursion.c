@@ -11,7 +11,7 @@
 
 int test_function(int num, int x)
 {
-	if (x % num == 0)
+	if (num % x == 0)
 	{
 		if ((x * x) == num)
 		{
