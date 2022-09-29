@@ -20,6 +20,7 @@ int test_function(int num, int x)
 		else if ((x * x) > num)
 			return (-1);
 	}
+		
 	else
 		return (test_function(num, x + 1));
 	return (0);
