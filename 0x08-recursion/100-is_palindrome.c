@@ -1,26 +1,30 @@
 #include "main.h"
 #include <stdio.h>
 
-int test(char *a, char *b)
+int _strlen(char *s, int i)
 {
-	if (*a == *b)
+	if (*s != '\0')
+	{
+		_strlen((s + 1), (i + 1));
+	}
+	return (i);
+}
+int test(char *s, int i, int n)
+{
+	if (s[i] == s[n])
 	{
 		return (1);
 	}
 	else
 		return (0);
-	return (test((a + 1), (b + 1)));
+	return (test(s, (i + 1), (n - 1)));
 }
 
 int is_palindrome(char *s)
 {
-	char *a;
-	char *b;
-
-	a = s;
-	is_palindrome(s + 1);
-	b = s;
-	return (test(a, b));
+	int n = _strlen(s);
+	int i = 0;
+	return (test(s, i, n));
 }
 	
 	
