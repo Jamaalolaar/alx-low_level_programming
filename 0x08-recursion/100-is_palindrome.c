@@ -4,17 +4,16 @@
 /**
  * _strlen - gets string length.
  * @s: pointer to string
- * @i: counter
- * Return: string length (i).
+ * Return: string length.
  */
 
-int _strlen(char *s, int i)
+int _strlen(char *s)
 {
 	if (*s != '\0')
 	{
-		_strlen((s + 1), (i + 1));
+		return (1 + (_strlen(s + 1)));
 	}
-	return (i);
+	return (0);
 }
 /**
  * test - recursive functions through the string characters
@@ -27,13 +26,14 @@ int _strlen(char *s, int i)
  */
 int test(char *s, int i, int n)
 {
-	if (s[i] == s[n])
+	if (n >= i)
 	{
-		return (1);
-	}
-	else
+		if (s[i] == s[n])
+		{
+			return (1 * test(s, (i + 1), (n - 1)));
+		}
 		return (0);
-	return (test(s, (i + 1), (n - 1)));
+	}
 }
 /**
  * is_palindrome - checks if a string is a palindrome
@@ -42,7 +42,7 @@ int test(char *s, int i, int n)
  */
 int is_palindrome(char *s)
 {
-	int n = _strlen(s, 0);
+	int n = _strlen(s) - 1;
 	int i = 0;
 
 	return (test(s, i, n));
