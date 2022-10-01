@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		p = atoi(argv[1]);
 		q = atoi(argv[2]);
 
-		n = a * b;
+		n = p * q;
 
 		printf("%d\n", n);
 		return (0);
