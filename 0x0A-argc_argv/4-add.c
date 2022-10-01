@@ -12,6 +12,7 @@
 int check(char *str)
 {
 	unsigned int i;
+
 	i = 0;
 
 	while (i < strlen(str))
@@ -37,6 +38,7 @@ int main(int argc, char *argv[])
 	int i;
 	int n;
 	int sum = 0;
+
 	i = 1;
 
 	while (i < argc)
