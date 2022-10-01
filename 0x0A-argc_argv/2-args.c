@@ -10,10 +10,16 @@
 
 int main(int argc, char *argv[])
 {
-	for (int i = 0; i <= argc; i++)
+	int i = 0;
+
+	if (argc > 0)
 	{
-		printf("%s\n", argv[i]);
+	        for (int i = 0; i < argc; i++)
+		{
+			printf("%s\n", argv[i]);
+		}
 	}
 
 	return (0);
+			
 }
