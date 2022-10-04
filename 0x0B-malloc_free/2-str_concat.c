@@ -3,23 +3,6 @@
 #include <stdlib.h>
 
 /**
- * getlen - gets a string length.
- * @s: pointer to string
- * Return: n.
- */
-
-int getlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-/**
  * str_concat - concatenates two strings
  * @s1: first string
  * @s2: second string
@@ -29,7 +12,7 @@ int getlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *c;
-	int a, b, sum, i;
+	int a, b, i;
 
 	if (s1 == NULL)
 	{
@@ -39,23 +22,23 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 == "";
 	}
+	for (a = 0; s1[a] || s2[a]; a++)
+	{
+		i++;
+	}
 
-	a = getlen(s1);
-	b = getlen(s2);
-	sum = a + b;
-	c = malloc(sizeof(char) * (sum + 1));
+	c = malloc(sizeof(char) * (i));
 	if (c == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < a; i++)
+	for (a = 0; s1[a]; a++)
 	{
-		c[i] = s1[i];
+		c[b++] = s1[a];
 	}
-	for (i = 0; b < sum; i++, b++)
+	for (a = 0; s2[a]; a++)
 	{
-		c[b] = s2[i];
+		c[b++] = s2[a];
 	}
-	c[sum] = '\0';
 	return (c);
 }
