@@ -29,36 +29,43 @@ int getlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *c;
-	int a, b, sum;
-	int i = 0;
+	int a, b, sum, i;
 
 	a = getlen(s1);
 	b = getlen(s2);
 	sum = a + b;
 	c = malloc(sizeof(char) * (sum + 1));
-
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
 	if (c == NULL)
 	{
 		return (NULL);
 	}
 
-	while (i < a)
+	if (s1 != NULL && s2 != NULL)
 	{
-		c[i] = s1[i];
-		i++;
+		for (i = 0; i < a; i++)
+		{
+			c[i] = s1[i];
+		}
+		for (i = 0; b < sum; i++; b++)
+		{
+			c[b] = s2[i];
+		}
+		c[sum] = '\0';
 	}
-	i = 0;
-	while (b < sum)
+	else if (s1 == NULL && s2 != NULL)
 	{
-		c[b] = s2[i];
-		b++;
-		i++;
+		for (i = 0; i <= b; i++)
+		{
+			c[i] = s2[i];
+		}
 	}
-	c[sum] = '\0';
+	else if (s1 != NULL && s2 == NULL)
+	{
+		for (i = 0; i <= a; i++)
+		{
+			c[i] = s1[i];
+		}
+	}
 	return (c);
 	free(c);
 }
