@@ -19,19 +19,22 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
-	while (str[n] != '\0')
+	else
 	{
-		n++;
-	}
 
-	c = malloc(sizeof(char) * n);
+		while (str[n] != '\0')
+		{
+			n++;
+		}
 
-	while (index <= n)
-	{
-		c[index] = str[index];
-		index++;
+		c = malloc(sizeof(char) * n);
+
+		while (index <= n)
+		{
+			c[index] = str[index];
+			index++;
+		}
+		return (c);
+		free(c);
 	}
-	return (c);
-	free(c);
 }
