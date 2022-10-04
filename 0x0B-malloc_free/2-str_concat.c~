@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * getlen - gets a string length.
+ * @s: pointer to string
+ * @n: string length.
+ * Return: n.
+ */
+
+int getlen(char *s, int n)
+{
+	
+
+/**
+ * str_concat - concatenates two strings
+ * @str1: first string
+ * @str2: second string
+ * Return: pointer to newly formed string
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+}
