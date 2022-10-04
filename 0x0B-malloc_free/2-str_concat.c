@@ -31,39 +31,27 @@ char *str_concat(char *s1, char *s2)
 	char *c;
 	int a, b, sum, i;
 
+	if (s1 == NULL)
+		s1 == "";
+	if (s2 == NULL)
+		s2 == "";
+
 	a = getlen(s1);
 	b = getlen(s2);
 	sum = a + b;
 	c = malloc(sizeof(char) * (sum + 1));
-
-	if (s1 != NULL && s2 != NULL)
+	if (c == NULL)
 	{
-		for (i = 0; i < a; i++)
-		{
-			c[i] = s1[i];
-		}
-		for (i = 0; b < sum; i++, b++)
-		{
-			c[b] = s2[i];
-		}
-		c[sum] = '\0';
-	}
-	else if (s1 == NULL)
-	{
-		for (i = 0; i <= b; i++)
-		{
-			c[i] = s2[i];
-		}
-	}
-	else if (s2 == NULL)
-	{
-		for (i = 0; i <= a; i++)
-		{
-			c[i] = s1[i];
-		}
-	}
-	else
 		return (NULL);
+	}
+	for (i = 0; i < a; i++)
+	{
+		c[i] = s1[i];
+	}
+	for (i = 0; b < sum; i++, b++)
+	{
+		c[b] = s2[i];
+	}
+	c[sum] = '\0';
 	return (c);
-	free(c);
 }
