@@ -28,6 +28,10 @@ char *_strdup(char *str)
 		}
 
 		c = malloc(sizeof(char) * n);
+		if (c == NULL)
+		{
+			return (NULL);
+		}
 
 		while (index <= n)
 		{
