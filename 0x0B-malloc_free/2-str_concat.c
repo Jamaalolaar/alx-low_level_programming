@@ -35,10 +35,6 @@ char *str_concat(char *s1, char *s2)
 	b = getlen(s2);
 	sum = a + b;
 	c = malloc(sizeof(char) * (sum + 1));
-	if (c == NULL)
-	{
-		return (NULL);
-	}
 
 	if (s1 != NULL && s2 != NULL)
 	{
@@ -52,20 +48,22 @@ char *str_concat(char *s1, char *s2)
 		}
 		c[sum] = '\0';
 	}
-	else if (s1 == NULL && s2 != NULL)
+	else if (s1 == NULL)
 	{
 		for (i = 0; i <= b; i++)
 		{
 			c[i] = s2[i];
 		}
 	}
-	else if (s1 != NULL && s2 == NULL)
+	else if (s2 == NULL)
 	{
 		for (i = 0; i <= a; i++)
 		{
 			c[i] = s1[i];
 		}
 	}
+	else
+		return (NULL);
 	return (c);
 	free(c);
 }
