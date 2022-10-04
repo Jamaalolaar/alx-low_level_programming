@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	unsigned int n = 0;
+	int n = 0;
 
 	while (str[n] != '\0')
 	{
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 
 	while (index <= n)
 	{
-		c[i] = str[i];
+		c[index] = str[index];
 	}
 	return (c);
 }
