@@ -37,7 +37,11 @@ char *str_concat(char *s1, char *s2)
 	sum = a + b;
 	c = malloc(sizeof(char) * (sum + 1));
 
-	if (s1 == NULL || s2 == NULL || c == NULL)
+	if (s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
+	if (c == NULL)
 	{
 		return (NULL);
 	}
