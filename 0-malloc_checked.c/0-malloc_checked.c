@@ -1,0 +1,27 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * malloc_checked - works like malloc
+ * @b: argument of function.
+ * Return: pointer to memory
+ */
+
+void *malloc_checked(unsigned int b)
+{
+	unsigned int *a;
+	unsigned int *n;
+
+	if (a == NULL)
+	{
+		return (98);
+	}
+
+	if (n > 0 && n <= 8)
+	{
+		a = malloc(n * b);
+	}
+	return (a);
+	free(a);
+}
