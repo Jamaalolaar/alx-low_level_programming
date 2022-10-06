@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * string_nconcat - concatenates two strings.
  * @s1: first entry
@@ -22,11 +23,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
+	ptr = malloc(i + j + 1);
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	ptr = malloc(i + j + 1);
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
@@ -38,4 +39,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	ptr[i + j + 1] = '\0';
 	return (ptr);
+	free(ptr);
 }
