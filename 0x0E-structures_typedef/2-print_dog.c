@@ -2,7 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/**
+* print_dog - prints dog
+* @d: dog
+* Return: void
+*/
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
