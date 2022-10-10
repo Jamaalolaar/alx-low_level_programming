@@ -21,7 +21,7 @@ int _length(char *s)
  * @src: second entry
  * Return: dest
  */
-char _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
@@ -47,7 +47,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
-	dog->name = malloc(sizeof(char) * (length(name) + 1));
+	dog->name = malloc(sizeof(char) * (_length(name) + 1));
 	if (dog->name == NULL)
 	{
 		free(dog->name);
