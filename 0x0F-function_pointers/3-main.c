@@ -29,6 +29,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	operator = *argv[2];
+	if ((operator == '/' || 0 == '%') && arg2 == 0)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
 	answer = f(input1, input2);
 	printf("%d\n", answer);
 
