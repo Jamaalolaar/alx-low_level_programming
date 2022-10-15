@@ -1,0 +1,1 @@
+#ifndef VARIADIC_FUNCTIONS_H
