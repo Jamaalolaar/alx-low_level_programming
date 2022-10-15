@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[a] == t_arg[b] && c)
 			{
-				printf(",");
+				printf(", ");
 				break;
 			}
 			b++;
