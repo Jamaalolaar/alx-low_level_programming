@@ -30,6 +30,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (a < n - 1)
 			if (separator)
 				printf("%s", separator);
+		a++;
 	}
 	printf("\n");
 	va_end(list);
