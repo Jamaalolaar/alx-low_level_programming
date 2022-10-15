@@ -10,7 +10,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	valist list;
+	va_list list;
 	unsigned int a = 0, b, c = 0;
 	char *s;
 	const char t_arg[] = "icfs";
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 			}
 			b++;
 		}
-		switch (format[i])
+		switch (format[a])
 		{
 		case 'c':
 			printf("%c", va_arg(list, int)), c = 1;
