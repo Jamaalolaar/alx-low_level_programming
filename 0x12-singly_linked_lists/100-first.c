@@ -3,7 +3,7 @@
 void __attribute__((constructor)) tortue(void);
 
 /**
- * hare - prints a string before the execution of main function
+ * tortue - prints a string before the execution of main function
  * Return: void
  */
 void tortue(void)
