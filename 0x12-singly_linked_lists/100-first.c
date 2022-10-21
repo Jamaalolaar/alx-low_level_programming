@@ -1,12 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
+void __attribute__((constructor)) tortue(void);
 
 /**
  * hare - prints a string before the execution of main function
  * Return: void
  */
-void hare(void)
+void tortue(void)
 {
-	printf("You're beat! and yet, you moust allow,"
-	       "\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you moust allow,\n");
+	printf("I bore my house upon my back!\n");
 }
