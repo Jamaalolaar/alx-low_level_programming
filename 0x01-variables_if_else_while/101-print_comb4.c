@@ -26,11 +26,11 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				units++;
 			}
 			circle1++;
 			units = circle1;
 			tens++;
-			units = tens + 1;
 		}
 		hundreds++;
 		circle2++;
