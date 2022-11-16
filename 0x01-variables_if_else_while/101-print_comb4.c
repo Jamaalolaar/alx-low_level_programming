@@ -9,6 +9,7 @@
 int main(void)
 {
 	int hundreds = 0, tens = 1, units = 2;
+	int circle1 = units, circle2 = tens;
 
 	while (hundreds <= 7)
 	{
@@ -25,13 +26,15 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				units++;
 			}
+			cirle1++;
+			units = circle1;
 			tens++;
 			units = tens + 1;
 		}
 		hundreds++;
-		tens = hundreds + 1;
+		circle2++;
+		tens = circle2;
 	}
 	putchar('\n');
 	return (0);
