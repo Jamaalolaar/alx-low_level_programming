@@ -28,4 +28,5 @@ int main (void)
 		tens++;
 	}
 	putchar('\n');
+	return(0);
 }
