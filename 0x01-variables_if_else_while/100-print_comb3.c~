@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - prints possible combinations of two different digits
+ * Return: void
+ */
+
+int main (void)
+{
+	int tens = 0, units = 0, rounds = 0;
+
+	while (tens < 10)
+	{
+		while (units > 0 && units < 10)
+		{
+			if (units != tens)
+			{
+				putchar(tens);
+				putchar(units);
+				Putchar(',');
+				putchar(' ');
+			}
+			units++;
+		}
+		rounds++;
+		units = rounds;
+		tens++;
+	}
+	putchar('\n');
+}
