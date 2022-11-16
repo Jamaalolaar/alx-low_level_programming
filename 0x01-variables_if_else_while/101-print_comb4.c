@@ -27,7 +27,7 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			cirle1++;
+			circle1++;
 			units = circle1;
 			tens++;
 			units = tens + 1;
