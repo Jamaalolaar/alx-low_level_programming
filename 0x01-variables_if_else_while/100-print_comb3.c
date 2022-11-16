@@ -16,8 +16,8 @@ int main (void)
 		{
 			if (units != tens)
 			{
-				putchar(tens);
-				putchar(units);
+				putchar(tens + '0');
+				putchar(units + '0');
 				putchar(',');
 				putchar(' ');
 			}
