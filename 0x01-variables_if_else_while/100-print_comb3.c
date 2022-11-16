@@ -6,7 +6,7 @@
  * Return: void
  */
 
-int main (void)
+int main(void)
 {
 	int tens = 0, units = 1, rounds = 0;
 
@@ -24,7 +24,6 @@ int main (void)
 					putchar(' ');
 				}
 			}
-			
 			units++;
 		}
 		rounds++;
@@ -32,5 +31,5 @@ int main (void)
 		tens++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
