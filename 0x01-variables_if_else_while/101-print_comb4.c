@@ -21,7 +21,7 @@ int main(void)
 				putchar(tens + '0');
 				putchar(units + '0');
 
-				if (hundreds != 7)
+				if (hundreds < 7)
 				{
 					putchar(',');
 					putchar(' ');
