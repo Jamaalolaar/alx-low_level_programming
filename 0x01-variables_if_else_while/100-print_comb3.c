@@ -8,7 +8,7 @@
 
 int main (void)
 {
-	int tens = 0, units = 0, rounds = 0;
+	int tens = 0, units = 1, rounds = 0;
 
 	while (tens < 10)
 	{
