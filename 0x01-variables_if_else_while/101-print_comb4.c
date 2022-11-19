@@ -22,7 +22,7 @@ int main(void)
 					putchar(hundreds + '0');
 					putchar(tens + '0');
 					putchar(units + '0');
-					if (hundreds <= 7 && tens <= 8)
+					if (hundreds <= 7 && units < 9)
 					{
 						putchar(',');
 						putchar(' ');
