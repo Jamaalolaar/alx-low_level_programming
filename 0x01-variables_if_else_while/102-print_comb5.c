@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - A program that prints all possible combinations of two-digit number
+ * Return: void
+ */
 int main(void)
 {
 	int a = 0, b = 0, c = 0, d = 1;
