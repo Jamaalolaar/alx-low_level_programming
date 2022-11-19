@@ -22,7 +22,7 @@ int main(void)
 					putchar(hundreds + '0');
 					putchar(tens + '0');
 					putchar(units + '0');
-					if (hundreds < 7)
+					if (hundreds <= 7)
 					{
 						putchar(',');
 						putchar(' ');
@@ -32,8 +32,8 @@ int main(void)
 				units++;
 			}
 			circle1++;
-			units = circle1;
 			tens++;
+			units = tens + 1;
 		}
 		circle1 = 2;
 		units = circle1;
