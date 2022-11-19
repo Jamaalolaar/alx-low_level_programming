@@ -22,7 +22,7 @@ int main(void)
 					putchar(hundreds + '0');
 					putchar(tens + '0');
 					putchar(units + '0');
-					if (circle2 != 8 && circle1 != 9)
+					if (circle2 != 8 && units < 9)
 					{
 						putchar(',');
 						putchar(' ');
