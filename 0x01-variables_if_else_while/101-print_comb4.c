@@ -17,7 +17,7 @@ int main(void)
 		{
 			while (units <= 9)
 			{
-				if (hundreds != tens && tens != units)
+				if (hundreds != tens && tens != units && hundreds != units)
 				{
 					putchar(hundreds + '0');
 					putchar(tens + '0');
