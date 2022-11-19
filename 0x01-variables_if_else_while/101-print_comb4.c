@@ -36,7 +36,7 @@ int main(void)
 		}
 		hundreds++;
 		circle2++;
-		tens = circle2;
+		tens = hundreds + 1;
 		units = tens + 1;
 		circle1 = units;
 	}
