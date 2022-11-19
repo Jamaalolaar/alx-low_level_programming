@@ -36,10 +36,10 @@ int main(void)
 			units = tens + 1;
 		}
 		circle1 = 2;
-		units = circle1;
 		hundreds++;
 		circle2++;
 		tens = circle2;
+		units = tens + 1;
 	}
 	putchar('\n');
 	return (0);
