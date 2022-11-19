@@ -27,7 +27,6 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-						
 				}
 				units++;
 			}
