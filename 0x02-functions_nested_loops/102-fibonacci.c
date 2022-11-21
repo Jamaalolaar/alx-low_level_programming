@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	int count = 1, a = 1, b = 1, sum;
+	long int count = 1, a = 1, b = 1, sum;
 
 	while (count <= 50)
 	{
-		printf("%d", b);
+		printf("%ld", b);
 		if (count < 50)
 		{
 			printf(", ");
