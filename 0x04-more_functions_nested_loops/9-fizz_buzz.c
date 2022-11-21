@@ -8,29 +8,33 @@
 
 int main(void)
 {
-	int i;
+	int count = 1;
 
-	for (i = 1; i <= 100; i++)
+	while (count <= 100)
 	{
-		if (i == 100)
+		if (count % 3 == 0 && count % 15 != 0)
+		{
+			printf("Fizz");
+
+		}
+		else if (count % 5 == 0 && count % 15 != 0)
 		{
 			printf("Buzz");
 		}
-		if ((i % 5 == 0) && (i % 3 == 0))
+		else if (count % 15 == 0)
 		{
-			printf("FizzBuzz ");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz ");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz ");
+			printf("FizzBuzz");
 		}
 		else
-			printf("%d ", i);
+			printf("%d", count);
+		if (count < 100)
+		{
+			putchar(' ');
+		}
+
+		count++;
 	}
-	printf("\n");
+	putchar('\n');
+	return (0);
 	return (0);
 }
