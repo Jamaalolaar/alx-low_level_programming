@@ -20,9 +20,10 @@ char *_strcat(char *dest, char *src)
 		len++;
 	}
 
-	for (i = 0; src[i]; i++; len++)
+	for (i = 0; src[i]; i++)
 	{
 		dest[len] = src[i];
+		len++;
 	}
 	return (dest);
 }
