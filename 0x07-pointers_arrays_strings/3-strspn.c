@@ -16,6 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (; *(s + n); n++)
 	{
+		a = 0;
 		for (; *(accept + a); a++)
 		{
 			if (*(s + n) == *(accept + a))
