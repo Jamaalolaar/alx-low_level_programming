@@ -47,7 +47,6 @@ char *_strstr(char *haystack, char *needle)
 		}
         
 		a++;
-		b++;
 	}
     
 	return(NULL);
