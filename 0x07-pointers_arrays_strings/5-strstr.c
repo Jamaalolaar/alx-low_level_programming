@@ -42,7 +42,7 @@ char *_strstr(char *haystack, char *needle)
 				break;
 			}
 			else
-				return(&haystack[a]);
+				return(&haystack[a - (b-1)]);
 			b++;
 		}
         
