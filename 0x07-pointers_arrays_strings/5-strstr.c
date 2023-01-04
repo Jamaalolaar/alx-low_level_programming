@@ -44,8 +44,8 @@ char *_strstr(char *haystack, char *needle)
 			else
 				b++;
 		}
-		if (needle[b + 1] == '\0')
-			return (&haystack[a - b + 1]);
+		if (needle[b] == '\0')
+			return (&haystack[a - b]);
         
 		a++;
 	}
