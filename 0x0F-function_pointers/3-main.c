@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int input1, input2, answer;
 	char operator;
-	int (*f)(int,int);
+	int (*f)(int, int);
 
 	if (argc != 4)
 	{
@@ -27,17 +27,17 @@ int main(int argc, char *argv[])
 	if (!f)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 	operator = *argv[2];
 	if ((operator == '/' || 0 == '%') && input2 == 0)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
 
 	answer = f(input1, input2);
 	printf("%d\n", answer);
 
-	return(0);
+	return (0);
 }
