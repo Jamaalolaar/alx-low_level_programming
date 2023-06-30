@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
 void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
@@ -9,8 +10,9 @@ void _print_rev_recursion(char *s)
 		_putchar(*s);
 	}
 }
-/**
- *int _getlen(char *s)
+*/
+
+int _getlen(char *s)
 {
 	int n = 0;
 	while (s[n] != '\0')
@@ -36,4 +38,3 @@ void _print_rev_recursion(char *s)
 		_print_rev_recursion(&(s[n-1]));
 	}
 }
-*/
