@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _pow_recursion - gets the value of an integer raised
+ * to the power of another integer
+ * @x: first value
+ * @y: power
+ * Return: x raised to the power of y
+ */
+
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+		return (-1);
+	else if (y == 0)
+		return (1);
+	else
+		return (x * _pow_recursion(x, (y - 1)));
+}
