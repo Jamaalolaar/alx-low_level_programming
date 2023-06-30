@@ -10,6 +10,8 @@
  */
 int _testfunc(int num, int test)
 {
+	if (num <= 1)
+		return (0);
 	if (test < num)
 	{
 		if (num % test == 0)
