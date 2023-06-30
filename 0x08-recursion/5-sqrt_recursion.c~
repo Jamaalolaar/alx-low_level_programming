@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+
+int getsqrt(int num, int srt)
+{
+	if (num < 0)
+		return (-1);
+	else if (num == 0)
+		return (0);
+
+	if (srt * srt == num)
+	{
+		return (srt);
+	}
+	else
+		return (getsqrt(num, (srt + 1)));
+int _sqrt_recursion(int n)
+{
+	return (getsqrt(n, 0));
+}
