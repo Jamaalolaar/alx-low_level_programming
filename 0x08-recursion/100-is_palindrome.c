@@ -36,7 +36,7 @@ int _revstr(char *s, int a, int b)
  */
 int is_palindrome(char *s)
 {
-	int n = _getlength(s);
+	int n = _getlength(s) - 1;
 
 	return (_revstr(s, 0, n));
 }
