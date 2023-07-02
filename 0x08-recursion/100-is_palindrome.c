@@ -7,10 +7,10 @@
  * index of the last character
  * Return: value of n
  */
-int _getlen(char *s, int n)
+int _getlength(char *s, int n)
 {
 	if (*s != '\0')
-		return (_getlen((s + 1), (n + 1)));
+		return (_getlength((s + 1), (n + 1)));
 	return (n);
 }
 /**
@@ -36,7 +36,7 @@ int _revstr(char *s, int a, int b)
  */
 int is_palindrome(char *s)
 {
-	int n = _getlen(s, 0);
+	int n = _getlength(s, 0);
 
 	return (_revstr(s, 0, n));
 }
