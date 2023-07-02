@@ -25,7 +25,7 @@ int _revstr(char *s, int a, int b)
 {
 	if (s[a] != s[b])
 		return (0);
-	if (s[a] != '\0')
+	if (s[a] == s[b])
 		return (_revstr(s, (a + 1), (b - 1)));
 	return (1);
 }
