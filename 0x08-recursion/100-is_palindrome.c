@@ -3,9 +3,7 @@
 /**
  * _getlength - gets the length of the string
  * @s: string
- * @n: string index; string length is the
- * index of the last character
- * Return: value of n
+ * Return: length of string
  */
 int _getlength(char *s)
 {
@@ -23,10 +21,14 @@ int _getlength(char *s)
  */
 int _revstr(char *s, int a, int b)
 {
-	if (s[a] != s[b])
-		return (0);
-	if (s[a] == s[b])
-		return (_revstr(s, (a + 1), (b - 1)));
+	if (b > a)
+	{
+		if (s[a] != s[b])
+			return (0);
+		if (s[a] == s[b])
+			return (_revstr(s, (a + 1), (b - 1)));
+		return (1);
+	}
 	return (1);
 }
 /**
