@@ -9,9 +9,9 @@
  */
 int _getlength(char *s, int n)
 {
-	if (*s != '\0')
-		return (_getlength((s + 1), (n + 1)));
-	return (n);
+	if (*s == '\0')
+		return (0);
+	return (1 + (_getlength(s + 1));
 }
 /**
  * _revstr - compares characters to check if they
