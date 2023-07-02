@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _getlen - gets the length of the string
+ * _getlength - gets the length of the string
  * @s: string
  * @n: string index; string length is the
  * index of the last character
  * Return: value of n
  */
-int _getlength(char *s, int n)
+int _getlength(char *s)
 {
 	if (*s == '\0')
 		return (0);
@@ -36,7 +36,7 @@ int _revstr(char *s, int a, int b)
  */
 int is_palindrome(char *s)
 {
-	int n = _getlength(s, 0);
+	int n = _getlength(s);
 
 	return (_revstr(s, 0, n));
 }
