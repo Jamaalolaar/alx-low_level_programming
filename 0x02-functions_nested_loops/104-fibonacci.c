@@ -11,14 +11,14 @@ int main(void)
 	int n2 = 2;
 	int a = 1;
 
-	_putchar(1);
-	_putchar(2);
+	printf("%d, ", n1);
+	printf("%d, ", n2);
 	while (a <= 96)
 	{
 		sum = n1 + n2;
 		n1 = n2;
 		n2 = sum;
-		_putchar(sum);
+		printf("%d, ", sum);
 		a++;
 	}
 	return (0);
