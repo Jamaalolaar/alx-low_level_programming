@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	long long int n1 = 1, sum = 0, n2 = 2, a = 1;
+	long int n1 = 1, sum = 0, n2 = 2, a = 1;
 
-	printf("%lld, ", n1);
-	printf("%lld, ", n2);
+	printf("%ld, ", n1);
+	printf("%ld, ", n2);
 	while (a <= 96)
 	{
 		sum = n1 + n2;
 		n1 = n2;
 		n2 = sum;
-		printf("%lld, ", sum);
+		printf("%ld, ", sum);
 		a++;
 	}
 	return (0);
