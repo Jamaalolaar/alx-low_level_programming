@@ -7,18 +7,16 @@
  */
 int main(void)
 {
-	int n1 = 1, sum = 0;
-	int n2 = 2;
-	int a = 1;
+	long long int n1 = 1, sum = 0, n2 = 2, a = 1;
 
-	printf("%d, ", n1);
-	printf("%d, ", n2);
+	printf("%lld, ", n1);
+	printf("%lld, ", n2);
 	while (a <= 96)
 	{
 		sum = n1 + n2;
 		n1 = n2;
 		n2 = sum;
-		printf("%d, ", sum);
+		printf("%lld, ", sum);
 		a++;
 	}
 	return (0);
