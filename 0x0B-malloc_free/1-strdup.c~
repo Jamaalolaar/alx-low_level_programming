@@ -1,0 +1,26 @@
+#include "main.h"
+
+int _getlen(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+char *_strdup(char *str)
+{
+	char *array;
+	int n = _getlen(str), i = 0;
+
+	array = malloc(i * sizeof(char) + 1);
+	if (array == NULL)
+		return (NULL);
+	for (i = 0; i <= n; i++)
+	{
+		array[i] = str[i];
+	}
+	return (array);
+}
