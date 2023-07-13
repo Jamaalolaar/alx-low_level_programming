@@ -1,22 +1,5 @@
 #include "main.h"
-/**
- * _getlen - gets the length of a string
- * @str: string
- * Return: length of string
- */
-int _getlen(char *str)
-{
-	int i = 0;
 
-	if (str == NULL)
-		return (0);
-
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
 /**
  * _strdup - duplicates a string
  * @str: string
@@ -25,18 +8,20 @@ int _getlen(char *str)
 char *_strdup(char *str)
 {
 	char *array;
-	int n = _getlen(str), i = 0;
+	int i, len = 0;
 
 	if (str == NULL)
 		return (NULL);
+	while (str[len] != 0)
+		len++;
 
 	array = malloc(sizeof(char) * (i + 1));
 	if (array == NULL)
 		return (NULL);
-	for (i = 0; i < n; i++)
+	for (i = 0; i < len; i++)
 	{
 		array[i] = str[i];
 	}
-	array[n] = '\0';
+	array[len] = '\0';
 	return (array);
 }
