@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			array[i] = s1[i];
 		}
-		for (i = 0; i < sum_len; i++)
+		for (i = 0; i + len1 < sum_len; i++)
 		{
 			array[i + len1] = s2[i];
 		}
