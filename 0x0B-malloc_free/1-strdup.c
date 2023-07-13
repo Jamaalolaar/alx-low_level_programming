@@ -8,6 +8,9 @@ int _getlen(char *str)
 {
 	int i = 0;
 
+	if (str == NULL)
+		return (0);
+
 	while (str[i] != '\0')
 	{
 		i++;
@@ -23,6 +26,9 @@ char *_strdup(char *str)
 {
 	char *array;
 	int n = _getlen(str), i = 0;
+
+	if (str == NULL)
+		return (NULL);
 
 	array = malloc(sizeof(char) * (i + 1));
 	if (array == NULL)
