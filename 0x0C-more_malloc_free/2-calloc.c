@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _call0c - allocates memory to an array
+ * @nmemb: number of elements
+ * @size: size of data type
+ * Return: pointer to memory
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
@@ -13,6 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	while (i < nmemb)
 	{
 		*((char *)(ptr) + i) = 0;
+		i++;
 	}
 	return (ptr);
 }
