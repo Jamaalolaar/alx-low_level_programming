@@ -54,5 +54,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else if ((i + j) < sum)
 			ptr[i + j] = s2[j];
 	}
+	return (ptr);
 
 }
