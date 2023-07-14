@@ -33,9 +33,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	a = _strlen(s1);
 	b = _strlen(s2);
 	if (s1 == NULL)
-		S1 = "";
+		s1 = "";
 	if (s2 == NULL)
-		S2 = "";
+		s2 = "";
 	if (n < 0)
 		return (NULL);
 	if (b > n)
