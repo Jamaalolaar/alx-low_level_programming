@@ -3,7 +3,7 @@
 int *array_range(int min, int max)
 {
 	int *array;
-	int i, size = max - min, a = min;
+	int i, size = max - min + 1, a = min;
 
 	if (min > max)
 		return (NULL);
