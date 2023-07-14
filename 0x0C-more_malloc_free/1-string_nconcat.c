@@ -27,7 +27,7 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int a, b, sum, i, j;
+	unsigned int a, b, sum, i, j;
 	char *ptr;
 
 	a = _strlen(s1);
@@ -36,8 +36,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	if (n < 0)
-		return (NULL);
 	if (b > n)
 		sum = a + n;
 	else
